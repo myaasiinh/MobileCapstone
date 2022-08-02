@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/user/Vscode/news-mvvm/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/user/Vscode/news-mvvm/app/src/main/res/layout/activity_web_view.xml" value="0.1" />
+        <entry key="..\:/Users/user/Vscode/news-mvvm/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/user/Vscode/news-mvvm/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/background_gradient_splash_screen.xml" value="0.1895" />
         <entry key="app/src/main/res/drawable/gradients.xml" value="0.191" />
         <entry key="app/src/main/res/drawable/ic_bookmark_selected.xml" value="0.191" />
@@ -29,7 +33,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
