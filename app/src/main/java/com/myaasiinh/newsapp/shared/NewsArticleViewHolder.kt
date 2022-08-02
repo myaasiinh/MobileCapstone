@@ -2,8 +2,8 @@ package com.myaasiinh.newsapp.shared
 
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.myaasiinh.core.data.NewsArticle
 import com.myaasiinh.newsapp.R
-import com.myaasiinh.newsapp.data.NewsArticle
 import com.myaasiinh.newsapp.databinding.ItemNewsArticleBinding
 
 class NewsArticleViewHolder(

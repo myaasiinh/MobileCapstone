@@ -3,7 +3,7 @@ package com.myaasiinh.newsapp.shared
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.myaasiinh.newsapp.data.NewsArticle
+import com.myaasiinh.core.data.NewsArticle
 import com.myaasiinh.newsapp.databinding.ItemNewsArticleBinding
 
 class NewsArticleListAdapter(

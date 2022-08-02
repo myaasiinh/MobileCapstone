@@ -2,8 +2,8 @@ package com.myaasiinh.newsapp.di
 
 import android.app.Application
 import androidx.room.Room
-import com.myaasiinh.newsapp.api.NewsApi
-import com.myaasiinh.newsapp.data.NewsArticleDatabase
+import com.myaasiinh.core.api.NewsApi
+import com.myaasiinh.core.data.NewsArticleDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
