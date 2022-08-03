@@ -23,7 +23,6 @@ class SearchNewsRemoteMediator(
     private val newsArticleDao = newsArticleDb.newsArticleDao()
     private val searchQueryRemoteKeyDao = newsArticleDb.searchQueryRemoteKeyDao()
 
-    @OptIn(ExperimentalPagingApi::class)
     override suspend fun load(
         loadType: LoadType,
         state: PagingState<Int, NewsArticle>

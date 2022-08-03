@@ -17,6 +17,7 @@
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/433ed815bd0a4497ce010a960fe3447c/transformed/junit-1.1.3-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/5fd1a74ec00d1e8d7d93b56b7caedeb3/transformed/espresso-core-3.4.0-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/67c7a209b0753809b7ad9ad24b560b38/transformed/viewbinding-7.2.0-api.jar</arg>
+                <arg>$MODULE_DIR$/../../../core/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e2184ee678bbed9969029e60ee110160/transformed/room-ktx-2.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/5c23070e25cbd733f922214d221f5904/transformed/paging-runtime-ktx-3.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/4a2d9ca175089da838b3661ce9adfe21/transformed/paging-runtime-3.1.1-api.jar</arg>

@@ -14,6 +14,7 @@
           <stringArguments>
             <stringArg name="classpath">
               <args>
+                <arg>$MODULE_DIR$/../../../core/build/intermediates/compile_library_classes_jar/debug/classes.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/e2184ee678bbed9969029e60ee110160/transformed/room-ktx-2.4.2-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/5c23070e25cbd733f922214d221f5904/transformed/paging-runtime-ktx-3.1.1-api.jar</arg>
                 <arg>$USER_HOME$/.gradle/caches/transforms-3/4a2d9ca175089da838b3661ce9adfe21/transformed/paging-runtime-3.1.1-api.jar</arg>
@@ -231,4 +232,5 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime-ktx:2.2.0@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0@aar" level="project" />
   </component>
+  <component name="TestModuleProperties" production-module="News_App.core.main" />
 </module>

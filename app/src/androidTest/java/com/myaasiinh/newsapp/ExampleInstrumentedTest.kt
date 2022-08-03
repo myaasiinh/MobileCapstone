@@ -1,3 +1,5 @@
+@file:Suppress("SpellCheckingInspection")
+
 package com.myaasiinh.newsapp
 
 import androidx.test.platform.app.InstrumentationRegistry
@@ -19,6 +21,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.android.newsapp", appContext.packageName)
+        assertEquals("com.myaasiinh.newsapp", appContext.packageName)
     }
 }

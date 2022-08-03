@@ -11,10 +11,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/News_App.core.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/News_App.core.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/News_App.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/News_App.core.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/News_App.core.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/core/News_App.core.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feature/News_App.feature.iml" filepath="$PROJECT_DIR$/.idea/modules/feature/News_App.feature.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feature/News_App.feature.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/feature/News_App.feature.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feature/News_App.feature.main.iml" filepath="$PROJECT_DIR$/.idea/modules/feature/News_App.feature.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/feature/News_App.feature.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/feature/News_App.feature.unitTest.iml" />
     </modules>
   </component>
 </project>

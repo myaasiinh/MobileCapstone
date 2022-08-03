@@ -44,9 +44,9 @@ class MainActivity : AppCompatActivity() {
         transaction.commit()
         // Setting title of the current fragment at the top of the Activity
         title = when (selectedFragment) {
-            is com.myaasiinh.newsapp.feature.breakingnews.BreakingNewsFragment -> getString(R.string.title_breaking_news)
-            is com.myaasiinh.newsapp.feature.searchnews.SearchNewsFragment -> getString(R.string.title_search_news)
-            is com.myaasiinh.newsapp.feature.bookmarks.BookmarksFragment -> getString(R.string.title_bookmarks)
+            is BreakingNewsFragment -> getString(R.string.title_breaking_news)
+            is SearchNewsFragment -> getString(R.string.title_search_news)
+            is BookmarksFragment -> getString(R.string.title_bookmarks)
             else -> ""
         }
     }
@@ -57,9 +57,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         if (savedInstanceState == null) { // Not configuration change
-            breakingNewsFragment = com.myaasiinh.newsapp.feature.breakingnews.BreakingNewsFragment()
-            searchNewsFragment = com.myaasiinh.newsapp.feature.searchnews.SearchNewsFragment()
-            bookmarksFragment = com.myaasiinh.newsapp.feature.bookmarks.BookmarksFragment()
+            breakingNewsFragment = BreakingNewsFragment()
+            searchNewsFragment = SearchNewsFragment()
+            bookmarksFragment = BookmarksFragment()
 
             supportFragmentManager.beginTransaction()
                 .add(R.id.fragment_container, breakingNewsFragment, TAG_BREAKING_NEWS_FRAGMENT)
@@ -68,11 +68,11 @@ class MainActivity : AppCompatActivity() {
                 .commit()
         } else { // Configuration change happens
             breakingNewsFragment =
-                supportFragmentManager.findFragmentByTag(TAG_BREAKING_NEWS_FRAGMENT) as com.myaasiinh.newsapp.feature.breakingnews.BreakingNewsFragment
+                supportFragmentManager.findFragmentByTag(TAG_BREAKING_NEWS_FRAGMENT) as BreakingNewsFragment
             searchNewsFragment =
-                supportFragmentManager.findFragmentByTag(TAG_SEARCH_NEWS_FRAGMENT) as com.myaasiinh.newsapp.feature.searchnews.SearchNewsFragment
+                supportFragmentManager.findFragmentByTag(TAG_SEARCH_NEWS_FRAGMENT) as SearchNewsFragment
             bookmarksFragment =
-                supportFragmentManager.findFragmentByTag(TAG_BOOKMARKS_FRAGMENT) as com.myaasiinh.newsapp.feature.bookmarks.BookmarksFragment
+                supportFragmentManager.findFragmentByTag(TAG_BOOKMARKS_FRAGMENT) as BookmarksFragment
 
             selectedIndex = savedInstanceState.getInt(KEY_SELECTED_INDEX, 0)
         }
