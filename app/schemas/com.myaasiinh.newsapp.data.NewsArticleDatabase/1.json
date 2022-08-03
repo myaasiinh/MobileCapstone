@@ -1,0 +1,143 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "111f3cd18caa5528f3b4a01e885323f5",
+    "entities": [
+      {
+        "tableName": "news_articles",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`title` TEXT, `url` TEXT NOT NULL, `thumbnailUrl` TEXT, `isBookmarked` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`url`))",
+        "fields": [
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbnailUrl",
+            "columnName": "thumbnailUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isBookmarked",
+            "columnName": "isBookmarked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "url"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "breaking_news",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`articleUrl` TEXT NOT NULL, `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "articleUrl",
+            "columnName": "articleUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "search_results",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`searchQuery` TEXT NOT NULL, `articleUrl` TEXT NOT NULL, `queryPosition` INTEGER NOT NULL, PRIMARY KEY(`searchQuery`, `articleUrl`))",
+        "fields": [
+          {
+            "fieldPath": "searchQuery",
+            "columnName": "searchQuery",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "articleUrl",
+            "columnName": "articleUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "queryPosition",
+            "columnName": "queryPosition",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "searchQuery",
+            "articleUrl"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "search_query_remote_keys",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`searchQuery` TEXT NOT NULL, `nextPageKey` INTEGER NOT NULL, PRIMARY KEY(`searchQuery`))",
+        "fields": [
+          {
+            "fieldPath": "searchQuery",
+            "columnName": "searchQuery",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nextPageKey",
+            "columnName": "nextPageKey",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "searchQuery"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '111f3cd18caa5528f3b4a01e885323f5')"
+    ]
+  }
+}
